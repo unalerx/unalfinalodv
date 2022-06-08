@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.navbar-light {
+  color: transparent !important;
+}
+
+.nav-başlık {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.nav-başlık:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav li a {
+  transition: all 0.5s;
+}
+
+.navbar-nav li a:hover {
+  color: #7564e5 !important;
+}
+/* nav sticky  */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.8s;
+  padding: 40px 100px;
+z-index: 100000;
+}
+header.sticky{
+  padding: 40px 100px;
+  background:#fff;
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+header.sticky ul li a  {
+  color: #7564e5 !important;
+}
+header.sticky a {
+  color: #7564e5 !important;
+}
+header.sticky ul li a:hover {
+  color: black !important;
+}
+/* Baner ksımı */
+.baner-buton {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 30px;
+  padding: 15px 38px;
+  font-weight: 600;
+  background: #7564e5;
+  border-radius: 25px;
+  line-height: 10px;
+  border: 2px solid #7564e5;
+  transition: all 0.4s;
+}
+
+.baner-buton:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.baner-içerik {
+  margin-top: 200px;
+}
+
+.baner-içerik h1 {
+  font-size: 51px;
+  margin-bottom: 30px;
+}
+
+.baner-içerik h2 {
+  font-size: 51px;
+  margin-bottom: 25px;
+}
+
+.baner-içerik p {
+  margin-bottom: 25px;
+}
+
+.baner-boşluk {
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.baner-resim {
+  background-image: url(../img/banner.jpg);
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.baner-resim:before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(7, 1, 90, 0.6);
+}
+
+
+/* Hakında kısmı */
+.hakinda-bosluk {
+  margin-top: 50px;
+  padding-top: 80px;
+}
+
+.hakinda-resim img {
+  border: 10px solid #7564e5;
+}
+
+.hakinda-kismi h4 {
+  font-size: 34px;
+  color: black;
+}
+
+.hakinda-kismi h4 span {
+  color: #7564e5;
+}
+
+.hakinda-içerikler {
+  margin-top: 20px;
+}
+
+.hakinda-içerikler li {
+  margin-top: 15px;
+  display: inline-block;
+  color: black;
+  width: 50%;
+}
+
+.hakinda-içerikler span {
+  display: inline-block;
+  font-weight: 600;
+  color: black;
+  width: 25%;
+}
+
+.hakinda-içerik span i {
+  margin-right: 5px;
+}
+
+.hakinda-içerik {
+  color: gray;
+  margin: 12px;
+}
+
+.hakinda-kismi a i {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid;
+}
+
+.alt-boşluk {
+  margin-bottom: 50px;
+}
+
+.hakinda-buton {
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 50px;
+  font-weight: 600;
+  background: #7564e5;
+  border-radius: 25px;
+  line-height: 10px;
+  border: 2px solid #7564e5;
+  transition: all 0.4s;
+}
+
+.hakinda-buton:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+/* servislerim kismi */
+.servisler-boşluk {
+  padding-top: 100px;
+  margin-top: 70px;
+}
+
+.servislerim-kismi {
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  background: transparent;
+  box-shadow: 0px 17px 60px #00000012;
+  transition: all 0.5s ease;
+}
+
+.servislerim-kismi:hover {
+  transform: scale(1.2);
+}
+
+.servislerim-kismi h4 {
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.servisler-boşluk h3 {
+  font-size: 40px;
+}
+
+.servisler-boşluk h3 span {
+  color: #7564e5;
+  font-size: 40px;
+}
+
+.servislerim-kismi p {
+  transition: all 0.5s ease;
+  color: gray;
+  margin-top: 13px;
+}
+
+.servislerim-kismi i {
+  width: 55px;
+  height: 55px;
+  font-size: 23px;
+  line-height: 55px;
+  color: #7564e5;
+  background: white;
+  border: 1px solid #eee;
+  transition: all 0.5s ease;
+}
+
+.servislerim-kismi:hover i {
+  background: #7564e5;
+  color: #fff;
+  border: 1px solid #7564e5;
+}
+
+/* servisler alt kısım */
+.servisler-alt-resim {
+  background: url(../img/cta-action.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.servisler-alt-resim:before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(7, 1, 90, 0.6);
+}
+
+.servisler-alt-resim h1 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.servisler-alt-resim a {
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 50px;
+  font-weight: 600;
+  background: #7564e5;
+  border-radius: 25px;
+  line-height: 10px;
+  border: 2px solid #7564e5;
+  transition: all 0.5s;
+}
+
+.servisler-alt-resim a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.servisler-alt-boşluk {
+  padding: 100px 0;
+}
+
+/* Portfolio */
+.Portfolio-boşluk {
+  padding-top: 100px;
+  margin-top: 70px;
+}
+
+.Portfolio-kismi h4 {
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.Portfolio-boşluk h3 {
+  font-size: 40px;
+}
+
+.Portfolio-boşluk h3 span {
+  color: #7564e5;
+  font-size: 40px;
+}
+
+.Portfolio-kismi p {
+  transition: all 0.5s ease;
+  color: gray;
+  margin-top: 13px;
+}
+
+.Portfoliom-buton {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.Portfolio-kismi {
+  margin-top: 25px;
+}
+
+.Portfolio-kismi img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+
+.Portfolio-kismi img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* resume kısmı */
+.resume-resim {
+  background: url(../img/counter.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.resume-resim:before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(7, 1, 90, 0.6);
+}
+
+.resume-boşluk {
+  margin-top: 100px;
+  padding: 80px 0;
+}
+
+.resume-kismi span {
+  color: #7564e5;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.resume-kismi h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* resume-alt-kisim */
+.resume-alt-kisim {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: transparent;
+  box-shadow: rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.resume-alt-kisim h4 {
+  color: black;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.resume-alt-kisim h3 {
+  font-size: 40px;
+}
+
+.resume-alt-kisim span {
+  color: #7564e5;
+  font-weight: bold;
+}
+
+.resume-alt-kisim p {
+  width: 80%;
+  color: gray;
+  margin-top: 13px;
+}
+
+.resume-alt-kisim i {
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  font-size: 23px;
+  line-height: 55px;
+  color: white;
+  background: #7564e5;
+  border: 1px solid #7564e5;
+}
+
+/* blog kismi */
+.blog-reng {
+  font-weight: bold;
+  font-size: 40px;
+  color: #7564e5;
+}
+
+
+/* foter kısımı */
+.foter-renk {
+  background: #24324a;
+}
+
+.foter-renk p {
+  color: white;
+}
+
+.foter-renk span {
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsife kismi*/
+@media (max-width:991px) {
+  #navbarNav {
+    background: #fff;
+  }
+
+  #navbarNav ul li a {
+    color: black !important;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+
+  #navbarNav ul li a:hover {
+    color: #7564e5 !important;
+  }
+}
